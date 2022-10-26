@@ -1,0 +1,14 @@
+{
+  "name": "airplane-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx concurrently 'npm run start:server' 'npm run start:client'",
+    "start:server": "npm --prefix ./server start",
+    "start:client": "npm --prefix ./client start"
+  },
+  "author": "",
+  "license": "ISC"
+}
