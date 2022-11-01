@@ -9,11 +9,16 @@ function App() {
       .then((data) => setData(data.message));
   }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{!data ? "Loading... " : data}</p>
-      </header>
-    </div>
+    <>
+      <div className="text-center">
+        <h1 className="">Title</h1>
+        <div className="App">
+          <header className="App-header">
+            <p>{!data ? "Loading... " : data}</p>
+          </header>
+        </div>
+      </div>
+    </>
   );
 }
 
