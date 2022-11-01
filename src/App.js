@@ -1,24 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Route, Routes } from "react-router";
+import Layout from "./layout";
 
+/**
+ * Defines the root application component.
+ * @returns {JSX.Element}
+ */
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("https://airplane-back.uk.r.appspot.com/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
   return (
-    <>
-      <div className="text-center">
-        <h1 className="">Title</h1>
-        <div className="App">
-          <header className="App-header">
-            <p>{!data ? "Loading... " : data}</p>
-          </header>
-        </div>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />} />
+    </Routes>
   );
 }
 
