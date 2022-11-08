@@ -1,0 +1,40 @@
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.navbar a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+/* One needs to stay underlined depending on current page */
+.navbar a:hover {
+  color: #606060;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: black;
+}
+
+.homeBtn {
+  margin-right: 20px;
+}
+
+.navbar i {
+  font-size: 21px;
+  padding: 0px 8px 0px 8px;
+}
+
+.navbar i:nth-child(2) {
+  font-size: 28px;
+  vertical-align: -1px;
+}
+
+.navbar div:nth-child(3) {
+  margin-right: 31px;
+}
+
+.navbar h3 {
+  font-size: 25px;
+  margin-left: 20px;
+}
