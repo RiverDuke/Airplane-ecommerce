@@ -1,0 +1,22 @@
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.navbar a {
+  color: #3a3a3a;
+  /* padding-bottom: 1; */
+  text-decoration: none;
+}
+
+/* One needs to stay underlined depending on current page */
+.navbar a:hover {
+  color: #606060;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: black;
+}
+
+.homeBtn {
+  margin-right: 20px;
+}
