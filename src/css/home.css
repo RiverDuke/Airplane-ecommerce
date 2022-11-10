@@ -5,8 +5,44 @@
 .home-logo {
   background-image: url(../images/banner-logo.jpg);
   background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 90vh;
+  height: 300px;
   position: static;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 50px;
+}
+
+.image-sizing {
+  background-size: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .image-sizing {
+    background-size: 130%;
+    transition-property: background-size;
+    transition-duration: 250ms;
+  }
+}
+
+.buy-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/classic-black-frame.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  position: static;
+  margin-top: 80px;
+  color: #fff;
+  text-shadow: 0 0 4px rgb(0 0 0 / 60%);
+}
+
+.buy-banner p:nth-child(1) {
+  padding-top: 45px;
+  font-size: 50px;
+  margin: 0.5rem;
+}
+
+.buy-banner p:nth-child(2) {
+  font-size: 25px;
+  margin-bottom: 1rem;
 }
