@@ -10,9 +10,9 @@ export default function Navbar() {
       </div>
 
       <div>
-        <i class="bi bi-search"></i>
-        <i class="bi bi-person"></i>
-        <i class="bi bi-bag"></i>
+        <i className="bi bi-search"></i>
+        <i className="bi bi-person"></i>
+        <i className="bi bi-bag"></i>
       </div>
     </div>
   );
