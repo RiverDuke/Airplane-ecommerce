@@ -31,7 +31,7 @@
   background-size: cover;
   height: 35vh;
   position: static;
-  margin-top: 60px;
+  margin-top: 100px;
   color: #fff;
   text-shadow: 0 0 4px rgb(0 0 0 / 60%);
 }
@@ -54,7 +54,7 @@
 .card-real {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .card-real .card {
@@ -81,10 +81,63 @@
   border-radius: 3px;
   font-size: 15px;
   color: #3a3a3a;
-  /* text-shadow: 0 0 4px rgb(0 0 0 / 1%); */
 }
 
 .card-real .card-body {
   margin-left: 0;
   padding-left: 0;
+}
+
+.image-group {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.image-group a {
+  text-decoration: none;
+}
+
+.image-group a div {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 4px rgb(0 0 0 / 60%);
+  font-weight: 500;
+  margin-top: 203px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-group p {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 4px rgb(0 0 0 / 60%);
+  font-weight: 500;
+  margin: auto;
+}
+
+.image-group div {
+  display: flex;
+}
+
+.picture {
+  background-image: url(../images/library2.jpg);
+  width: 33.3333333333%;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-name-training {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/sunglasses3.jpg);
+}
+
+.image-name-training:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/sunglasses3.jpg);
+}
+
+.image-name-airlinePrep {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/thrust-levers5.jpg);
 }

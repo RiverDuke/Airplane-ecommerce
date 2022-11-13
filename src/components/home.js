@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import basicModal from "../images/sunglasses-photo-one.jpg";
 import gettingReady from "../images/getting-ready.jpg";
 import fatherSon from "../images/library2.jpg";
+import thrusters from "../images/thrust-levers5.jpg";
+import flightTraining from "../images/sunglasses3.jpg";
 
 export default function HomePage() {
   return (
@@ -51,6 +52,22 @@ export default function HomePage() {
               BEGIN GROUND SCHOOL
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="image-group">
+        <div>
+          <Link className="picture image-name-training">
+            <div>FLIGHT TRAINING</div>
+          </Link>
+          <div className="picture image-name-airlinePrep">
+            <p>AIRLINE PREP</p>
+          </div>
+          <div className="picture"></div>
+        </div>
+        <div>
+          <div className="picture"></div>
+          <div className="picture"></div>
+          <div className="picture"></div>
         </div>
       </div>
     </div>
