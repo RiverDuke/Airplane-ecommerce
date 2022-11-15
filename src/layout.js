@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/footer";
 import HomePage from "./components/home";
 import Navbar from "./components/navbar";
 /**
@@ -17,6 +18,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./css/navbar.css";
 import "./css/home.css";
+import "./css/footer.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

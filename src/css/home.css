@@ -90,7 +90,6 @@
 
 .image-group {
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .image-group a {
@@ -125,6 +124,7 @@
   height: 450px;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .image-name-training {
@@ -140,4 +140,24 @@
 .image-name-airlinePrep {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/thrust-levers5.jpg);
+}
+
+.image-name-homeBuilders {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/propPlane.JPG);
+}
+
+.image-name-aerobatics {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/biPlane.JPG);
+}
+
+.image-name-finance {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/privateJet.JPG);
+}
+
+.image-name-maintenance {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/prop2.JPG);
 }
