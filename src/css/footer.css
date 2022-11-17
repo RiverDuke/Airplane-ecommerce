@@ -3,16 +3,30 @@
   height: 200px;
   display: flex;
   flex-direction: row;
-  /* align-items: flex-end; */
   justify-content: center;
+}
+
+.footer div:nth-child(2) p {
+  font-size: 17px;
 }
 
 .newsletter-btn {
   width: 400px;
 }
 
+.newsletter-btn input,
+.newsletter-btn button {
+  border-radius: 0;
+}
+
+.newsletter-btn button {
+  background-color: #3a3a3a;
+  color: #fff;
+  text-shadow: 0 0 4px rgb(0 0 0 / 60%);
+}
+
 .payment-copyright {
-  margin: 20px 10vw 0 0;
+  margin: 30px 9vw 0 0;
 }
 
 .payment-copyright p {
@@ -20,9 +34,13 @@
 }
 
 .footer div:nth-child(2) {
-  margin: 20px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
-.visa {
-  background-image: url(../images/visa.png);
+.icon-credit {
+  font-size: 14px;
+}
+
+.icon-credit a {
+  color: #3a3a3a;
 }

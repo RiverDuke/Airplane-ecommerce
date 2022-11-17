@@ -11,7 +11,7 @@ export default function Footer() {
         <img src={discover} width="50px" />
         <img src={american} width="50px" />
         <img src={paypal} width="50px" />
-        <p>
+        <p className="icon-credit">
           Icons made by Freepik from{" "}
           <a
             href="https://www.flaticon.com/authors/freepik"
@@ -21,26 +21,24 @@ export default function Footer() {
             www.flaticon.com
           </a>
         </p>
-        <p>Copyright © 2022 River Duke. All rights reserved.</p>
+        <p>Copyright © 2022 Positive Rate Gear. All rights reserved.</p>
       </div>
 
       <div>
         <p>Newsletter</p>
-        <div class="input-group newsletter-btn">
+        <div className="input-group newsletter-btn">
           <input
             type="text"
-            class="form-control "
+            className="form-control"
             placeholder="Email address"
             aria-label="Recipient's email"
             aria-describedby="basic-addon2"
           />
-          <span class="input-group-text" id="basic-addon2">
+          <button className="input-group-text" id="basic-addon2">
             SUBSCRIBE
-          </span>
+          </button>
         </div>
       </div>
-      {/* <hr />
-       */}
     </div>
   );
 }

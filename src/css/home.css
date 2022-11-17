@@ -49,6 +49,8 @@
 
 .buy-banner a {
   border-radius: 3px;
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
 }
 
 .card-real {
