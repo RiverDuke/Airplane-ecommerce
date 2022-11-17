@@ -1,12 +1,27 @@
+import visa from "../images/visa.png";
+import paypal from "../images/paypal.png";
+import discover from "../images/discover.png";
+import american from "../images/american-express.png";
+
 export default function Footer() {
   return (
     <div className="footer">
-      <div>
-        <i class="bi bi-0-circle" style={{ color: "green" }}></i>
-        <i class="bi bi-0-circle"></i>
-        <i class="bi bi-0-circle"></i>
-        <i class="bi bi-0-circle"></i>
-        <p>hello</p>
+      <div className="payment-copyright">
+        <img src={visa} width="50px" />
+        <img src={discover} width="50px" />
+        <img src={american} width="50px" />
+        <img src={paypal} width="50px" />
+        <p>
+          Icons made by Freepik from{" "}
+          <a
+            href="https://www.flaticon.com/authors/freepik"
+            target="_blank"
+            rel="noreferrer"
+          >
+            www.flaticon.com
+          </a>
+        </p>
+        <p>Copyright © 2022 River Duke. All rights reserved.</p>
       </div>
 
       <div>
@@ -25,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       {/* <hr />
-      <p>Copyright © 2022 River Duke. All rights reserved.</p> */}
+       */}
     </div>
   );
 }

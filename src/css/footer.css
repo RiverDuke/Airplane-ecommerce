@@ -1,27 +1,28 @@
 .footer {
   background-color: #f6f6f6;
-  height: 350px;
+  height: 200px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  justify-content: center;
 }
 
 .newsletter-btn {
   width: 400px;
 }
 
-.footer div:nth-child(1) {
-  margin: 40px 20vw 0 20vw;
+.payment-copyright {
+  margin: 20px 10vw 0 0;
 }
 
-.footer hr {
-  width: 100%;
-  background-color: #000;
-  height: 1px;
+.payment-copyright p {
+  margin-block-start: 1em;
 }
 
-.footer i {
-  color: #000;
-  fill: #000;
-  font-size: 500px;
+.footer div:nth-child(2) {
+  margin: 20px 0 0 0;
+}
+
+.visa {
+  background-image: url(../images/visa.png);
 }
