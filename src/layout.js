@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import HomePage from "./components/home";
+import Login from "./components/login";
 import Navbar from "./components/navbar";
 /**
  * Defines the main layout of the application.
@@ -16,7 +17,8 @@ function Layout() {
     <div className="">
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
     </div>

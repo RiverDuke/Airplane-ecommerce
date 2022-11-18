@@ -5,13 +5,17 @@ export default function Navbar() {
     <div className="navbar">
       <h3>POSITIVE RATE GEAR</h3>
       <div className="d-flex position-absolute top-50 start-50 translate-middle align-middle">
-        <Link className="homeBtn">Home</Link>
+        <Link className="homeBtn" to="/">
+          Home
+        </Link>
         <Link>Catalog</Link>
       </div>
 
       <div>
         <i className="bi bi-search"></i>
-        <i className="bi bi-person"></i>
+        <Link to="/login">
+          <i className="bi bi-person"></i>
+        </Link>
         <i className="bi bi-bag"></i>
       </div>
     </div>
