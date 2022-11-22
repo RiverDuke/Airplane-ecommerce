@@ -18,6 +18,7 @@ export default function Login() {
         return res.json();
       })
       .then((data) => {
+        console.log("data:", data);
         return setData(`${data.data[0].Name}: ${data.data[0].Number}`);
       });
   }, [backEndUrl]);
