@@ -5,10 +5,12 @@ export default function Login() {
   const [data, setData] = useState(null);
   let backEndUrl;
 
+  console.log("ITSMEHI", process.env.REACT_APP_TESTING);
+
   if (process.env.NODE_ENV === "development") {
     backEndUrl = "http://localhost:3001";
   } else {
-    backEndUrl = process.env.BACKEND_URL;
+    backEndUrl = process.env.REACT_APP_BACKEND_URL;
   }
 
   useEffect(() => {
