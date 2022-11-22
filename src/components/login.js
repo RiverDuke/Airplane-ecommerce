@@ -13,9 +13,14 @@ export default function Login() {
 
   useEffect(() => {
     fetch(`${backEndUrl}/api`)
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((data) => setData(`${data.data[0].Name}: ${data.data[0].Number}`));
   }, [backEndUrl]);
+
+  console.log(data);
 
   return (
     <div style={{ height: "80vh" }}>
