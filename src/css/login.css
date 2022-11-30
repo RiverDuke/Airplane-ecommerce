@@ -1,0 +1,38 @@
+.login {
+  margin: auto;
+  margin-top: 70px;
+  width: 400px;
+  color: #3a3a3a;
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login input {
+  border-radius: 2px;
+}
+
+.login input:focus {
+  border: #0077b6 2px solid;
+  box-shadow: none;
+}
+
+.login button {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+  text-shadow: 0 0 4px rgb(0 0 0 / 60%);
+  border-radius: 2px;
+  margin: 30px 0 30px 0;
+  padding: 7px 20px;
+}
+
+.login a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: #606060;
+}

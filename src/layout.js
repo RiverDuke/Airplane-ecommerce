@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import CreateAccount from "./components/create_account";
 import Footer from "./components/footer";
 import HomePage from "./components/home";
 import Login from "./components/login";
 import Navbar from "./components/navbar";
+
 /**
  * Defines the main layout of the application.
  *
@@ -19,6 +21,7 @@ function Layout() {
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<CreateAccount />}></Route>
       </Routes>
       <Footer />
     </div>
