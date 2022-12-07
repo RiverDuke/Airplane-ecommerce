@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { login } from "../utils/api";
+import { register } from "../utils/api";
 
 export default function Login() {
   const initialValue = {
@@ -23,7 +23,7 @@ export default function Login() {
     event.preventDefault();
     console.log(data);
 
-    const res = await login(data);
+    const res = await register(data);
     const body = await res.json();
     console.log(body.data.data);
   }

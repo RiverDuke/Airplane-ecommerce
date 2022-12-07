@@ -7,13 +7,27 @@ if (process.env.NODE_ENV === "development") {
 }
 
 export async function login(data) {
+  console.log(data);
   const url = new URL(`${backEndUrl}/login`);
   const options = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ data: data }),
+    body: JSON.stringify(data),
+  };
+  return await fetch(url, options);
+}
+
+export async function register(data) {
+  console.log(data);
+  const url = new URL(`${backEndUrl}/register`);
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
   };
   return await fetch(url, options);
 }
