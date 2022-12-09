@@ -32,7 +32,7 @@ export default function Login() {
 
     const res = await login(data);
     const body = await res.json();
-    console.log(body.data.data);
+    console.log(body);
   }
 
   return (

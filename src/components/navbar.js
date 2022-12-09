@@ -8,7 +8,8 @@ export default function Navbar() {
         <Link className="homeBtn" to="/">
           Home
         </Link>
-        <Link>Catalog</Link>
+        <Link className="homeBtn">Catalog</Link>
+        <Link>Articles</Link>
       </div>
 
       <div>
