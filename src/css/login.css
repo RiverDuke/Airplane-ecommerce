@@ -37,6 +37,10 @@
   color: #606060;
 }
 
+.login button:active {
+  background-color: #3a3a3a !important;
+}
+
 .createTitle {
   margin-bottom: 35px !important;
 }

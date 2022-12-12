@@ -11,6 +11,7 @@ export async function login(data) {
   const url = new URL(`${backEndUrl}/login`);
   const options = {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
@@ -24,10 +25,23 @@ export async function register(data) {
   const url = new URL(`${backEndUrl}/register`);
   const options = {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
+  };
+  return await fetch(url, options);
+}
+
+export async function Test() {
+  const url = new URL(`${backEndUrl}/login/test`);
+  const options = {
+    method: "GET",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
   };
   return await fetch(url, options);
 }
