@@ -45,3 +45,11 @@ export async function Test() {
   };
   return await fetch(url, options);
 }
+
+export async function logout() {
+  const url = new URL(`${backEndUrl}/login/logout`);
+  const options = {
+    credentials: "include",
+  };
+  return await fetch(url, options);
+}

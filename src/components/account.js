@@ -1,11 +1,24 @@
-import { Test } from "../utils/api";
+import { logout, Test } from "../utils/api";
 
 export default function Account() {
-  async function Testing() {
-    const res = await Test();
-    const body = await res.json();
-    console.log(body);
-  }
-  Testing();
-  return <h1>Account</h1>;
+  return (
+    <>
+      <button
+        onClick={async () => {
+          const res = await Test();
+          const body = await res.json();
+          console.log(body);
+        }}
+      >
+        Test Auth Route
+      </button>
+      <button
+        onClick={async () => {
+          await logout();
+        }}
+      >
+        Log Out
+      </button>
+    </>
+  );
 }
