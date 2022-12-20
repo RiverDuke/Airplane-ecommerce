@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { login } from "../utils/api";
+import { authCheck, login } from "../utils/api";
 
 export default function Login() {
   const initialValue = {
@@ -11,6 +11,17 @@ export default function Login() {
   const [data, setData] = useState(initialValue);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    authCheck()
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        if (res.authorized) {
+          navigate("/account");
+        }
+      });
+  }, []);
 
   function onChange({ target }) {
     setData({

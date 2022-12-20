@@ -34,7 +34,7 @@ export async function register(data) {
   return await fetch(url, options);
 }
 
-export async function Test() {
+export async function authCheck() {
   const url = new URL(`${backEndUrl}/login/test`);
   const options = {
     method: "GET",

@@ -1,0 +1,12 @@
+.account {
+  text-align: center;
+}
+
+.center_icon {
+  font-size: 150px;
+  color: #343434;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  border-radius: 50%;
+}
