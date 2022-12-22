@@ -1,0 +1,15 @@
+.article-form {
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.article-form input,
+.article-form textarea {
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.article-form button {
+  display: block;
+  margin: auto;
+}

@@ -1,59 +1,259 @@
+import { useState } from "react";
+
 export default function AddArticle() {
+  const initialValue = {
+    title: "",
+    password: "",
+    scource: "",
+    header: "",
+    mainImg: "",
+    content1: "",
+    image1: "",
+    content2: "",
+    image2: "",
+    content3: "",
+    image3: "",
+    content4: "",
+    image4: "",
+    content5: "",
+    image5: "",
+  };
+  const [data, setData] = useState(initialValue);
+
+  function onChange({ target }) {
+    setData({
+      ...data,
+      [target.name]: target.value,
+    });
+  }
+
+  function onSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <div>
-      Please use the sharing tools found via the share button at the top or side
-      of articles. Copying articles to share with others is a breach of FT.com
-      T&Cs and Copyright Policy. Email licensing@ft.com to buy additional
-      rights. Subscribers may share up to 10 or 20 articles per month using the
-      gift article service. More information can be found at
-      https://www.ft.com/tour.
-      https://www.ft.com/content/e9a2b2df-6e16-49d0-8ff1-4f48a225d6e7 Donald
-      Trump paid $1.8mn in federal income tax for the six years between 2015 and
-      2020, as he declared $53mn in net losses over the period spanning his 2016
-      campaign for the White House and the bulk of his term as US president. The
-      details of Trump’s tax payments came in a summary of his tax returns
-      released by the Democratic-led US House ways and means committee this week
-      after four years of legal wrangling. The panel is expected to publish full
-      redacted versions of Trump’s tax returns in the coming days. The summary,
-      which was compiled by Congress’s non-partisan Joint Committee on Taxation,
-      showed Trump declared no taxable income for 2015, 2016, 2017 and 2020,
-      years in which he racked up $82mn in combined losses. The two years for
-      which he reported taxable income were 2018 and 2019, with adjusted gross
-      income of nearly $29mn. The documents show the extent to which Trump
-      aggressively used tax deductions and reported losses in order to lower his
-      tax bill at the height of his political career and his public service. The
-      JCT said it had “no opinion” on whether the former president should have
-      paid more or less tax than he actually did during those years, but it
-      noted a series of items on Trump’s tax returns. Among them were interest
-      income from related-party loans made to some of Trump’s children,
-      including Ivanka Trump, Eric Trump and Donald Trump Jr. The JCT said these
-      raised “the question of whether the loans were bona fide arms lengths
-      transactions or whether the transfers were disguised gifts that could
-      trigger gift tax and a disallowance of interest deductions by the related
-      borrowers”. Like many real estate developers, Trump’s business is
-      structured through tax-exempt “pass-through” vehicles where ultimate tax
-      is paid on his personal returns submitted to the Internal Revenue Service.
-      The report noted the majority of the Trump vehicles in some years reported
-      “either no gross income (ie only expenses), or gross income and expenses
-      that entirely offset, raising the questions of whether these were valid
-      trade or business activities, or whether these schedules contained costs
-      derived from personal activities or hobbies.” Richard Neal, the Democratic
-      chair of the ways and means committee, has justified his pursuit and
-      release of Trump’s tax returns on the grounds that the IRS failed to
-      perform a mandatory audit of the ex-president’s tax returns while was in
-      the White House. “For four years, the committee has been reviewing how the
-      IRS enforces the federal tax laws against, and ensures compliance by, a
-      president,” he said on Tuesday night. “A president is no ordinary
-      taxpayer. They hold power and influence unlike any other American. And
-      with great power comes even greater responsibility,” he added. But
-      Republicans have lashed out at the publication of the tax returns as
-      politically motivated. “I am deeply concerned by recent erosions of
-      taxpayer confidentiality and the dangerous precedent today’s release sets,
-      which undermines confidence in both our tax laws and legislature,” Mike
-      Crapo, the top Republican on the Senate finance committee, said on
-      Wednesday.
-      <img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F606e39ac-74b1-44a2-8224-94fe88411ac9.jpg?dpr=1&fit=scale-down&source=next&width=700"></img>
-      <p></p>
+      <h1>Add Article</h1>
+      <form className="col-6 article-form" onSubmit={onSubmit}>
+        <div className="mb-3">
+          <label htmlFor="title" className="form-label">
+            Title :
+          </label>
+          <input
+            name="title"
+            type="textarea"
+            id="title"
+            className="form-control"
+            onChange={onChange}
+            value={data.title}
+            required
+          ></input>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="scource" className="form-label">
+            Scource :
+          </label>
+          <input
+            name="scource"
+            type="text"
+            id="scource"
+            className="form-control"
+            onChange={onChange}
+            value={data.scource}
+            required
+          ></input>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="Header" className="form-label">
+            Header :
+          </label>
+          <textarea
+            name="header"
+            type="text"
+            id="header"
+            className="form-control"
+            onChange={onChange}
+            value={data.header}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="mainImg" className="form-label">
+            Main Image / Thumbnail :
+          </label>
+          <input
+            name="mainImg"
+            type="text"
+            id="mainImg"
+            className="form-control"
+            onChange={onChange}
+            value={data.header}
+            required
+          ></input>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="content1" className="form-label">
+            Content - 1 :
+          </label>
+          <textarea
+            name="content1"
+            type="text"
+            id="content2"
+            className="form-control"
+            onChange={onChange}
+            value={data.content1}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="image1" className="form-label">
+            Image - 1 :
+          </label>
+          <input
+            name="image1"
+            type="text"
+            id="image1"
+            className="form-control"
+            onChange={onChange}
+            value={data.image1}
+            required
+          ></input>
+        </div>
+
+        {/* abc */}
+
+        <div className="mb-3">
+          <label htmlFor="content2" className="form-label">
+            Content - 2 :
+          </label>
+          <textarea
+            name="content2"
+            type="text"
+            id="content2"
+            className="form-control"
+            onChange={onChange}
+            value={data.content2}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="image2" className="form-label">
+            Image - 2 :
+          </label>
+          <input
+            name="image2"
+            type="text"
+            id="image2"
+            className="form-control"
+            onChange={onChange}
+            value={data.image2}
+            required
+          ></input>
+        </div>
+
+        {/* abc */}
+        <div className="mb-3">
+          <label htmlFor="content3" className="form-label">
+            Content - 3 :
+          </label>
+          <textarea
+            name="content3"
+            type="text"
+            id="content3"
+            className="form-control"
+            onChange={onChange}
+            value={data.content3}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="image3" className="form-label">
+            Image - 3 :
+          </label>
+          <input
+            name="image3"
+            type="text"
+            id="image3"
+            className="form-control"
+            onChange={onChange}
+            value={data.image3}
+            required
+          ></input>
+        </div>
+
+        {/* abc */}
+        <div className="mb-3">
+          <label htmlFor="content4" className="form-label">
+            Content - 4 :
+          </label>
+          <textarea
+            name="content4"
+            type="text"
+            id="content4"
+            className="form-control"
+            onChange={onChange}
+            value={data.content4}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="image4" className="form-label">
+            Image - 4 :
+          </label>
+          <input
+            name="image4"
+            type="text"
+            id="image4"
+            className="form-control"
+            onChange={onChange}
+            value={data.image4}
+            required
+          ></input>
+        </div>
+
+        {/* abc */}
+        <div className="mb-3">
+          <label htmlFor="content5" className="form-label">
+            Content - 5 :
+          </label>
+          <textarea
+            name="content5"
+            type="text"
+            id="content5"
+            className="form-control"
+            onChange={onChange}
+            value={data.content5}
+            required
+          ></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="image5" className="form-label">
+            Image - 5 :
+          </label>
+          <input
+            name="image5"
+            type="text"
+            id="image5"
+            className="form-control"
+            onChange={onChange}
+            value={data.image5}
+            required
+          ></input>
+        </div>
+
+        {/* abc */}
+
+        <button type="submit" className="btn btn-secondary">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }

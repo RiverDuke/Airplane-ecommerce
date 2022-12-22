@@ -7,6 +7,7 @@ import "./css/home.css";
 import "./css/footer.css";
 import "./css/login.css";
 import "./css/account.css";
+import "./css/addArticle.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
